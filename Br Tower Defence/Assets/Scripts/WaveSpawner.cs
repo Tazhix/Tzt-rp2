@@ -21,6 +21,9 @@ public class WaveSpawner : MonoBehaviour
 		if (countDown <= 0f)
 		{
 			StartCoroutine(SpawnWave());
+
+			//Debug.Log(waveIndex);
+
 			countDown = timeBetweenWaves;
 		}
 
@@ -37,14 +40,18 @@ public class WaveSpawner : MonoBehaviour
 		for (int i = 0; i < waveIndex; i++)
 		{
 			SpawnEnemy();
-			yield return new WaitForSeconds(0.5f);
+			//Debug.Log("wave");
+
+			yield return new WaitForSeconds(0.4f);
 		}
 
 	}
 
 	void SpawnEnemy()
 	{
+		//Debug.Log("SpawnEnemy");
 		Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation );
+		//Debug.Log("AfterSpawnEnemy");
 	}
 
 }

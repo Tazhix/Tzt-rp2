@@ -21,8 +21,6 @@ public class Enemy : MonoBehaviour
 		{
 			GetNextWaypoint();
 		}
-		
-
 	}
 
 	void GetNextWaypoint()
@@ -30,6 +28,9 @@ public class Enemy : MonoBehaviour
 			if (wavepointIndex >= Waypoints.points.Length - 1)
 				{
 					Destroy(gameObject);
+
+					//Debug.Log("Destroy");
+
 					return;
 				}
 

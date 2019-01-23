@@ -1,36 +1,44 @@
 fileFormatVersion: 2
-guid: cbb889349adbd884a8540c11e6db4b54
+guid: 1ab031a2e5917ee4b973a3fc1efe4914
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Missile
-    100002: //RootNode
-    100004: Stand
-    100006: Turret
-    400000: Missile
-    400002: //RootNode
-    400004: Stand
-    400006: Turret
-    2100000: No Name
-    2100002: Bolts
-    2100004: Stand
-    2100006: Turret Accent
-    2100008: Main Turret
-    2300000: Missile
-    2300002: Stand
-    2300004: Turret
-    3300000: Missile
-    3300002: Stand
-    3300004: Turret
-    4300000: Missile
-    4300002: Stand
-    4300004: Turret
-  externalObjects: {}
+    100000: //RootNode
+    100002: Turret
+    100004: Turret.001
+    400000: //RootNode
+    400002: Turret
+    400004: Turret.001
+    2100000: Turret_Metal
+    2100002: Turret_Metal2
+    2100004: Turret_GunMetal
+    2300000: Turret
+    2300002: Turret.001
+    3300000: Turret
+    3300002: Turret.001
+    4300000: Turret.001
+    4300002: Turret
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turret_GunMetal
+    second: {fileID: 2100000, guid: c3b8e469998b55b4e9ebf9d8cd230b32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turret_Metal
+    second: {fileID: 2100000, guid: d5a5ea5fe36ac7e40b4a68b264e856c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turret_Metal2
+    second: {fileID: 2100000, guid: e85a6273533f12a4f9822380014d7b52, type: 2}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -56,7 +64,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -80,8 +88,8 @@ ModelImporter:
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 38
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
